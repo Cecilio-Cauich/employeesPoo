@@ -1,9 +1,10 @@
 export default class Employees{
-    constructor({name, age, whatIdo = {}, workingDay = {}}){
+    constructor({name, age, whatIdo, workingDay, myVehicle}){
         this.name = name;
         this.age = age;
         this.whatIdo = whatIdo;
         this.workingDay = workingDay;
+        this.myVehicle = myVehicle;
     }
 
     whoAmI(){ //Quien es

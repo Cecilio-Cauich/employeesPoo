@@ -1,6 +1,6 @@
 import Workingday from "./working_day.js";
 import {Jobs, homegardener, woodgardener} from "./job.js";
-// import Vehicles from "./vehicles.js";
+import {camioneta, camionganadero} from "./vehicles.js";
 import Employees from "./employees.js";
 
 //jorndas laborales
@@ -37,22 +37,31 @@ const jardineroCas = new homegardener({
     description : "Me ocupo de la limpieza del jardin de la hacienda"
 });
 
-console.log(jardineroCas.myjob());
-console.log(jardineroCas.gettingtools());
+// console.log(jardineroCas.myjob());
+// console.log(jardineroCas.gettingtools());
 
 const jardineroPotre = new woodgardener({
     name : "Jardinero de potreros",
     description : "Me ocupo de darle mantenimiento a los potreros"
 });
 
-console.log("--------------------------------------------");
+// console.log("--------------------------------------------");
 
-console.log(jardineroPotre.myjob());
-console.log(jardineroPotre.gettingtools());
+// console.log(jardineroPotre.myjob());
+// console.log(jardineroPotre.gettingtools());
 
 // vehiculos
+const truck1 = new camionganadero({
+    typeC : "Camion ganadero",
+    brand : "Ford",
+    color : "Negro"
+})
 
-//pendiente
+const truck2 = new camioneta({
+    typeC : "Camioneta doble cabina",
+    brand : "Chevrolet",
+    color : "Blanco"
+})
 
 //empleado
 
@@ -61,8 +70,12 @@ const jose = new Employees({
     age : 27,
     whatIdo : caballerango,
     workingDay : wd_Morning,
+    myVehicle : truck1,
 });
 
+// console.log(jose)
 console.log(jose.whoAmI());
 console.log(jose.whatIdo.myjob())
 console.log(jose.workingDay.myWorkingHours())
+console.log(jose.myVehicle.driving());
+console.log(jose.myVehicle.carga());
