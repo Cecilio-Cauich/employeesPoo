@@ -1,15 +1,13 @@
-class Employees{
-    constructor({name, age, jobs}){
+export default class Employees{
+    constructor({name, age, whatIdo = {}, workingDay = {}}){
         this.name = name;
         this.age = age;
-        this.jobs = jobs;
+        this.whatIdo = whatIdo;
+        this.workingDay = workingDay;
     }
 
-    starworking(){
-        
+    whoAmI(){ //Quien es
+         return "My name is "+this.name + " and I am " + this.age + " years old";
     }
 
-    driving(){
-
-    }
 }

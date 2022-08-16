@@ -4,6 +4,8 @@ export default class Workingday{
         this.endTime = endTime;
     }
 
-
+    myWorkingHours(){
+        return "My work start at "+this.startTime+" and end at "+this.endTime;
+    }
 }
 
