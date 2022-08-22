@@ -1,3 +1,5 @@
+Programación orientada a objetos con JavaScript, aplicando los 4 pilares de POO: Abstración, herencia, encapsulamiento y polimorfismo.
+
 Este es un miniproyecto que simula objetos: Empleado, jornada laboral, empleo(puesto) y vehiculos, pertenecientes a un rancho.
 
 Las jornadas laborales tiene los atributos hora de inicio y fin, además de un método que describe la jornada
